@@ -37,9 +37,3 @@ Naviguez à travers les différentes sections pour explorer les contenus pédago
 ## Contributions
 
 Les contributions sont les bienvenues ! Pour proposer des modifications, veuillez créer une branche de fonctionnalité, soumettre une pull request, et décrire vos modifications de manière détaillée.
-
-## Licence
-
-Ce projet est gratuit et peut être utilisé librement par quiconque. Vous êtes libre de copier, modifier, distribuer et utiliser le projet à toutes fins, sans aucune restriction.
-
-
