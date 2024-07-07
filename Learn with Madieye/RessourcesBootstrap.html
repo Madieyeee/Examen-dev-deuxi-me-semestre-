@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ressources Bootstrap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
+    <style>
+nav {
+    padding: 12px 35px;
+    background: linear-gradient(to right, #2980b9, #2c3e50);
+    font-size: 17px;
+    font-weight: 600;
+    border: 3px solid linear-gradient(to right, #2980b9, #2c3e50);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+pre {
+    background: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    overflow-x: auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+article {
+    margin-bottom: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+code {
+    background: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.Btn {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(#2980b9, #2c3e50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    margin-left: 20px;
+    border: none;
+}  
+.arrow path {
+    fill: white;
+}
+.Btn:hover {
+    background: linear-gradient(#6590ac, #515891);
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class=" navbar navbar-expand-lg navbar-dark fixed-top">
+            <a style="margin-left: 4%;" class="navbar-brand ml-2"><i class="fas fa-code"></i>Learn With Madieye</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div style="margin-right: 4%;" class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html#what-to-learn"><i class="fa fa-tasks"></i> Learn</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="NosCoursPDF.html"><i class="bi bi-filetype-pdf"></i> Cours PDF</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#About"><i class="fa fa-users"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact-section"><i class="fa fa-address-book"></i> Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quiz-html"><i class="fas fa-question-circle"></i> Quiz</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main id="back-to-top">
+        <section class="mt-5 id="introduction">
+            <h1>Introduction à Bootstrap</h1>
+            <p>Bootstrap est un framework CSS populaire qui facilite la création de sites web réactifs et élégants. Il inclut des styles CSS prédéfinis et des composants JavaScript.</p>
+        </section>
+
+        <section id="getting-started">
+            <h2><u>Commencer avec Bootstrap</u> :</h2>
+            <article data-aos="fade-up">
+                <h3>Installation</h3>
+                <p>Vous pouvez installer Bootstrap de plusieurs manières. La méthode la plus simple consiste à utiliser un CDN (Content Delivery Network).</p>
+                <pre>
+&lt;!-- CSS de Bootstrap --&gt;
+&lt;link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"&gt;
+
+&lt;!-- JavaScript de Bootstrap --&gt;
+&lt;script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"&gt;&lt;/script&gt;
+</pre>                
+            </article>
+        </section>
+
+        <section id="layout">
+            <h2><u>Mise en Page avec Bootstrap</u> :</h2>
+            <article data-aos="fade-up">
+                <h3>Le Système de Grille</h3>
+                <p>Le système de grille de Bootstrap est basé sur une grille de 12 colonnes. Voici un exemple de disposition de base :</p>
+                <pre>
+&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col"&gt;Colonne 1&lt;/div&gt;
+        &lt;div class="col"&gt;Colonne 2&lt;/div&gt;
+        &lt;div class="col"&gt;Colonne 3&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>                
+            </article>
+            <article data-aos="fade-up">
+                <h3>Les Conteneurs</h3>
+                <p>Les conteneurs sont utilisés pour centrer et donner un maximum de largeur aux contenus de la page. Vous pouvez utiliser <code>.container</code> ou <code>.container-fluid</code>.</p>
+                <pre>
+&lt;div class="container"&gt;
+    Contenu centré et avec une largeur maximale fixe.
+&lt;/div&gt;
+&lt;div class="container-fluid"&gt;
+    Contenu centré et avec une largeur maximale de 100%.
+&lt;/div&gt;
+</pre>                
+            </article>
+        </section>
+
+        <section id="components">
+            <h2><u>Composants Bootstrap</u> :</h2>
+            <article data-aos="fade-up">
+                <h3>Les Boutons</h3>
+                <p>Bootstrap inclut des styles prédéfinis pour les boutons. Vous pouvez appliquer différentes classes pour changer leur apparence.</p>
+                <pre>
+&lt;button type="button" class="btn btn-primary"&gt;Bouton primaire&lt;/button&gt;
+&lt;button type="button" class="btn btn-secondary"&gt;Bouton secondaire&lt;/button&gt;
+&lt;button type="button" class="btn btn-success"&gt;Bouton succès&lt;/button&gt;
+&lt;button type="button" class="btn btn-danger"&gt;Bouton danger&lt;/button&gt;
+</pre>                
+            </article>
+            <article data-aos="fade-up">
+                <h3>Les Alertes</h3>
+                <p>Les alertes sont des messages contextuels qui peuvent être utilisés pour afficher des informations importantes.</p>
+                <pre>
+&lt;div class="alert alert-primary" role="alert"&gt;
+    Alerte primaire !
+&lt;/div&gt;
+&lt;div class="alert alert-secondary" role="alert"&gt;
+    Alerte secondaire !
+&lt;/div&gt;
+</pre>                
+            </article>
+            <article data-aos="fade-up">
+                <h3>Les Cartes</h3>
+                <p>Les cartes sont des conteneurs flexibles et extensibles pour afficher du contenu varié.</p>
+                <pre>
+&lt;div class="card" style="width: 18rem;"&gt;
+    &lt;img src="..." class="card-img-top" alt="..."&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h5 class="card-title"&gt;Titre de la carte&lt;/h5&gt;
+        &lt;p class="card-text"&gt;Un texte rapide pour constituer le corps de la carte.&lt;/p&gt;
+        &lt;a href="#" class="btn btn-primary"&gt;Aller quelque part&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>                
+            </article>
+        </section>
+
+        <section id="utilities">
+            <h2><u>Utilitaires Bootstrap</u> :</h2>
+            <article data-aos="fade-up">
+                <h3>Classes d'Espacement</h3>
+                <p>Bootstrap offre des classes utilitaires pour gérer les marges et les espacements. Par exemple :</p>
+                <pre>
+&lt;div class="mb-3"&gt;Marge inférieure de 3 unités&lt;/div&gt;
+&lt;div class="mt-5"&gt;Marge supérieure de 5 unités&lt;/div&gt;
+</pre>                
+            </article>
+            <article data-aos="fade-up">
+                <h3>Classes de Couleur</h3>
+                <p>Vous pouvez appliquer des couleurs prédéfinies à différents éléments.</p>
+                <pre>
+&lt;p class="text-primary"&gt;Texte primaire&lt;/p&gt;
+&lt;p class="text-danger"&gt;Texte danger&lt;/p&gt;
+&lt;p class="bg-warning"&gt;Fond d'avertissement&lt;/p&gt;
+</pre>                
+            </article>
+        </section>
+
+        <section id="responsive-utilities">
+            <h2><u>Utilitaires Responsives</u> :</h2>
+            <article data-aos="fade-up">
+                <h3>Classes Visibilité</h3>
+                <p>Ces classes permettent de cacher ou montrer des éléments selon la taille de l'écran.</p>
+                <pre>
+&lt;div class="d-none d-md-block"&gt;
+    Visible seulement sur les écrans moyens et plus grands.
+&lt;/div&gt;
+&lt;div class="d-sm-none"&gt;
+    Caché sur les écrans petits et plus petits.
+&lt;/div&gt;
+</pre>                
+            </article>
+        </section>
+    </main>
+    <a href="#back-to-top">
+        <button class="Btn">
+            <svg height="1.2em" class="arrow" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg>
+        </button>
+    </a>
+    <br>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true 
+        });
+    </script>
+</body>
+</html>

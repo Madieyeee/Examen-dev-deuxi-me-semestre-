@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Ressources JavaScript</title>
+    <style>
+nav {
+    padding: 12px 35px;
+    background: linear-gradient(to right, #2980b9, #2c3e50);
+    font-size: 17px;
+    font-weight: 600;
+    border: 3px solid linear-gradient(to right, #2980b9, #2c3e50);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+pre {
+    background: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    overflow-x: auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+article {
+    margin-bottom: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+code {
+    background: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.Btn {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(#2980b9, #2c3e50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    margin-left: 20px;
+    border: none;
+}  
+.arrow path {
+    fill: white;
+}
+.Btn:hover {
+    background: linear-gradient(#6590ac, #515891);
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class=" navbar navbar-expand-lg navbar-dark fixed-top">
+            <a style="margin-left: 4%;" class="navbar-brand ml-2"><i class="fas fa-code"></i>Learn With Madieye</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div style="margin-right: 4%;" class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html#what-to-learn"><i class="fa fa-tasks"></i> Learn</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="NosCoursPDF.html"><i class="bi bi-filetype-pdf"></i> Cours PDF</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#About"><i class="fa fa-users"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact-section"><i class="fa fa-address-book"></i> Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quiz-html"><i class="fas fa-question-circle"></i> Quiz</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main id="back-to-top">
+        <section class="mt-5" id="introduction">
+            <h1>Introduction au JavaScript</h1>
+            <p>JavaScript est un langage de programmation utilisé pour créer des contenus dynamiques et interactifs sur les pages web. Il est essentiel pour le développement web moderne.</p>
+        </section>
+
+        <section id="basics">
+            <h2>Les Bases de JavaScript</h2>
+            <article data-aos="fade-up">
+                <h3>Syntaxe de Base</h3>
+                <p>JavaScript utilise une syntaxe simple et intuitive. Voici un exemple de code JavaScript :</p>
+                <pre>
+&lt;script&gt;
+    console.log('Hello, world!');
+&lt;/script&gt;
+</pre>                
+            </article>
+            <article data-aos="fade-up">
+                <h3>Les Variables</h3>
+                <p>Les variables en JavaScript sont utilisées pour stocker des données. Vous pouvez les déclarer avec <code>var</code>, <code>let</code> ou <code>const</code>.</p>
+                <pre>
+let message = 'Hello, world!';
+let age = 20;
+const pi = 3.14;
+</pre>                
+            </article>
+            <article data-aos="fade-up">
+                <h3>Les Types de Données</h3>
+                <p>JavaScript prend en charge différents types de données, notamment les chaînes de caractères, les nombres, les objets, et les booléens.</p>
+                <pre>
+let name = 'Anne';
+let nombre = 42;
+let boolean = true;
+let objet = { prenom: "Madieye", age: 20 };
+let tableau = [1, 2, 3];
+</pre>                
+            </article>
+            <article data-aos="fade-up">
+                <h3>Les Fonctions</h3>
+                <p>Les fonctions sont des blocs de code réutilisables qui effectuent des tâches spécifiques.</p>
+                <pre>
+function direBonjour() {
+    console.log("Bonjour tout le monde!");
+}
+direBonjour();
+</pre>                
+            </article>
+            <article data-aos="fade-up">
+                <h3>Les Conditions</h3>
+                <p>Les instructions conditionnelles permettent d'exécuter du code différent en fonction de certaines conditions.</p>
+                <pre>
+let age = 18;
+if (age >= 18) {
+    console.log("Vous êtes majeur.");
+} else {
+    console.log("Vous êtes mineur.");
+}
+</pre>
+            </article>
+            <article data-aos="fade-up">
+                <h3>Les Boucles</h3>
+                <p>Les oucles permettent d'exécuter du code plusieurs fois.</p>
+                <pre>
+for (let i = 0; i < 5; i++) {
+    console.log("i vaut " + i);
+}
+
+let j = 0;
+while (j < 5) {
+    console.log("j vaut " + j);
+    j++;
+}
+</pre>
+            </article>
+            <article data-aos="fade-up">
+                <h3>Les Événements</h3>
+                <p>Les événements permettent de rendre une page interactive en répondant aux actions de l'utilisateur.</p>
+                <pre>
+&lt;button id="monBouton"&gt;Cliquez-moi&lt;/button&gt;
+
+&lt;script&gt;
+document.getElementById("monBouton").addEventListener("click", function() {
+    alert("Bouton cliqué!");
+});
+&lt;/script&gt;
+</pre>
+            </article>
+        </section>
+
+        <section id="dom-manipulation">
+            <h2>Manipulation du DOM</h2>
+            <article data-aos="fade-up">
+                <h3>Sélectionner des Éléments</h3>
+                <p>JavaScript permet de sélectionner et de manipuler les éléments HTML en utilisant le DOM (Document Object Model).</p>
+                <pre>
+let element = document.getElementById('myElement');
+let elements = document.getElementsByClassName('myClass');
+let elementsByTag = document.getElementsByTagName('p');
+let queryElement = document.querySelector('.myClass');
+</pre>                
+            </article>
+            <article data-aos="fade-up">
+                <h3>Modifier des Éléments</h3>
+                <p>Vous pouvez modifier le contenu et les styles des éléments HTML avec JavaScript.</p>
+                <pre>
+let element = document.getElementById('myElement');
+element.textContent = 'Nouveau contenu';
+element.style.color = 'blue';
+</pre>                
+            </article>
+        </section>
+        <section id="some-things">
+            <h2>Les Tableaux et les Objet</h2>
+            <article data-aos="fade-up">
+                <h3>Les Objets</h3>
+                <p>Les objets permettent de regrouper des valeurs et des fonctions qui leur sont associées.</p>
+                <pre>
+let personne = {
+    prenom: "Madieye",
+    age: 20,
+    saluer: function() {
+        console.log("Bonjour, je m'appelle " + this.prenom);
+    }
+};
+personne.saluer();
+</pre>
+            </article>
+            <article data-aos="fade-up">
+                <h3>Les Tableaux</h3>
+                <p>Les tableaux permettent de stocker plusieurs valeurs dans une seule variable.</p>
+                <pre>let fruits = ["Pomme", "Banane", "Cerise"];
+    console.log(fruits[0]); // Affiche "Pomme"
+                    
+    fruits.push("Orange");
+    console.log(fruits.length); // Affiche 4
+</pre>
+            </article>
+        </section>
+    </main>
+    <a href="#back-to-top">
+        <button class="Btn">
+            <svg height="1.2em" class="arrow" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg>
+        </button>
+    </a>
+    <br>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true 
+        });
+    </script>
+</body>
+</html>

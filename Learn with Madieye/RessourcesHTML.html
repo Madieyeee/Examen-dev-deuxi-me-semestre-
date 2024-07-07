@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Ressources HTML</title>
+    <style>
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+nav {
+    padding: 12px 35px;
+    background: linear-gradient(to right, #2980b9, #2c3e50);
+    font-size: 17px;
+    font-weight: 600;
+    border: 3px solid linear-gradient(to right, #2980b9, #2c3e50);
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,h2,h3 {
+    color: #333;
+}
+code {
+    background: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+pre {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+p {
+    color: #666;
+}
+section {
+    margin-bottom: 40px;
+}
+article {
+    margin-bottom: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+/*  */
+.Btn {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(#2980b9, #2c3e50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    margin-left: 20px;
+    border: none;
+}  
+.arrow path {
+    fill: white;
+}
+.Btn:hover {
+    background: linear-gradient(#6590ac, #515891);
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class=" navbar navbar-expand-lg navbar-dark fixed-top">
+            <a style="margin-left: 4%;" class="navbar-brand ml-2"><i class="fas fa-code"></i>Learn With Madieye</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div style="margin-right: 4%;" class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html#what-to-learn"><i class="fa fa-tasks"></i> Learn</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="NosCoursPDF.html"><i class="bi bi-filetype-pdf"></i> Cours PDF</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#About"><i class="fa fa-users"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact-section"><i class="fa fa-address-book"></i> Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quiz-html"><i class="fas fa-question-circle"></i> Quiz</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main id="back-to-top">
+        <section class="mt-5" id="introduction">
+            <h1><b>Introduction au HTML</b></h1>
+            <br>
+            <p>HTML (HyperText Markup Language) est le langage standard utilisé pour créer des pages web. Il permet de structurer et de formater le contenu des sites web.</p>
+        </section>
+
+        <section id="basic-elements">
+            <h2><u>Éléments de base</u> :</h2>
+            <article data-aos="fade-up">
+                <h3>Les Balises HTML</h3>
+                <p>Les balises HTML sont les éléments de base du langage HTML. Elles sont utilisées pour créer les différents composants d'une page web.</p>
+                <ul>
+                    <li><strong>&lt;html&gt;</strong> : La balise racine de tout document HTML.</li>
+                    <li><strong>&lt;head&gt;</strong> : Contient des métadonnées sur le document HTML.</li>
+                    <li><strong>&lt;body&gt;</strong> : Contient le contenu principal de la page web.</li>
+                </ul>
+            </article>
+            <article data-aos="fade-up">
+                <h3>Les Titres</h3>
+                <p>Les balises de titre sont utilisées pour créer des titres de différentes tailles. Il y a six niveaux de titres, de &lt;h1&gt; à &lt;h6&gt;, &lt;h1&gt; étant le plus important.</p>
+                <pre>
+&lt;h1&gt;Titre de niveau 1&lt;/h1&gt;
+&lt;h2&gt;Titre de niveau 2&lt;/h2&gt;
+&lt;h3&gt;Titre de niveau 3&lt;/h3&gt;
+&lt;h4&gt;Titre de niveau 4&lt;/h4&gt;
+&lt;h5&gt;Titre de niveau 5&lt;/h5&gt;
+&lt;h6&gt;Titre de niveau 6&lt;/h6&gt;
+</pre>
+            </article>
+            <article data-aos="fade-up">
+                <h3>Les Paragraphes</h3>
+                <p>La balise &lt;p&gt; est utilisée pour créer des paragraphes de texte.</p>
+<pre>
+&lt;p&gt;Ceci est un paragraphe de texte.&lt;/p&gt;
+</pre>
+            </article>
+            <article data-aos="fade-up">
+                <h3>Les Liens</h3>
+                <p>Les liens hypertextes sont créés avec la balise &lt;a&gt;. Ils permettent de naviguer d'une page à l'autre.</p>
+<pre>
+&lt;a href="https://www.example.com"&gt;Visiter Example.com&lt;/a&gt;
+</pre>
+            </article>
+            <article data-aos="fade-up">
+                <h3>Les Images</h3>
+                <p>Les images sont insérées avec la balise &lt;img&gt;. Elle nécessite un attribut <em>src</em> pour spécifier la source de l'image.</p>
+<pre>
+&lt;img src="image.jpg" alt="Description de l'image"&gt;
+</pre>
+            </article>
+        </section>
+
+        <section id="forms-tables">
+            <h2><u>Formulaires et Tables</u> :</h2>
+            <article data-aos="fade-up">
+                <h3>Formulaires</h3>
+                <p>Les formulaires permettent aux utilisateurs de saisir des données. Ils sont créés avec la balise &lt;form&gt;.</p>
+                <pre>
+&lt;form action="/submit" method="post"&gt;
+    &lt;label for="name"&gt;Nom :&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;&lt;br&gt;
+    &lt;label for="email"&gt;Email :&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;&lt;br&gt;
+    &lt;textarea id="message" name="message" rows="4" cols="50"&gt;Votre message ici...&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;
+    &lt;button type="submit"&gt;Envoyer&lt;/button&gt;
+&lt;/form&gt;
+</pre>
+            </article>
+            <article data-aos="fade-up">
+                <h3>Tables</h3>
+                <p>Les tables sont utilisées pour afficher des données tabulaires. Elles sont créées avec les balises &lt;table&gt;, &lt;tr&gt;, &lt;th&gt; et &lt;td&gt;.</p>
+                <pre>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nom&lt;/th&gt;
+        &lt;th&gt;Âge&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Alice&lt;/td&gt;
+        &lt;td&gt;24&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Bob&lt;/td&gt;
+        &lt;td&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+            </article>
+        </section>
+
+        <section id="multimedia">
+            <h2><u>Multimédia</u> :</h2>
+            <article data-aos="fade-up">
+                <h3>Vidéo</h3>
+                <p>Les vidéos peuvent être intégrées avec la balise &lt;video&gt;. Elle nécessite les attributs <em>src</em> et <em>controls</em>.</p>
+                <pre>
+&lt;video src="video.mp4" controls&gt;Votre navigateur ne supporte pas la balise vidéo.&lt;/video&gt;
+</pre>
+            </article>
+            <article data-aos="fade-up">
+                <h3>Audio</h3>
+                <p>Les fichiers audio peuvent être intégrés avec la balise &lt;audio&gt;. Elle nécessite l'attribut <em>src</em> et <em>controls</em>.</p>
+                <pre>
+&lt;audio src="audio.mp3" controls&gt;Votre navigateur ne supporte pas la balise audio.&lt;/audio&gt;
+</pre>
+            </article>
+        </section>
+
+        <section id="semantics">
+            <h2><u>Éléments Sémantiques</u> :</h2>
+            <article data-aos="fade-up">
+                <h3>Les Balises Sémantiques</h3>
+                <p>Les balises sémantiques sont utilisées pour donner du sens au contenu HTML. Elles améliorent l'accessibilité et le SEO.</p>
+                <ul>
+                    <li><strong>&lt;header&gt;</strong> : Représente l'en-tête d'un document ou d'une section.</li>
+                    <li><strong>&lt;nav&gt;</strong> : Représente une section de navigation.</li>
+                    <li><strong>&lt;article&gt;</strong> : Représente un contenu indépendant et autonome.</li>
+                    <li><strong>&lt;section&gt;</strong> : Représente une section générique d'un document.</li>
+                    <li><strong>&lt;footer&gt;</strong> : Représente le pied de page d'un document ou d'une section.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="structure">
+            <h2><u>Éléments de Structure</u> :</h2>
+            <article data-aos="fade-up">
+                <h3>Divisions</h3>
+                <pre>
+&lt;div&gt;
+    &lt;h2&gt;Titre dans une div&lt;/h2&gt;
+    &lt;p&gt;Paragraphe dans une div.&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+            </article>
+        </section>
+
+        <section id="attribut">
+            <h2><u>Attributs Globaux</u> :</h2>
+            <article data-aos="fade-up">
+                <h3>id</h3>
+                    <pre><code>&lt;p id="paragraphe-unique"&gt;Paragraphe avec un ID.&lt;/p&gt;</code></pre>
+                <h3>class</h3>
+                    <pre><code>&lt;p class="paragraphe-style"&gt;Paragraphe avec une classe.&lt;/p&gt;</code></pre>
+                <h3>style</h3>
+                    <pre><code>&lt;p style="color:blue;"&gt;Paragraphe avec style en ligne.&lt;/p&gt;</code></pre>
+            <article>
+        </section>
+        <section id="commentaire-baby">
+            <h2>Commentaires :</h2>
+            <article data-aos="fade-up">
+                <pre><code>&lt;!-- Ceci est un commentaire --&gt;</code></pre>
+            </article>
+        </section>
+    </main>
+    <a href="#back-to-top">
+        <button class="Btn">
+            <svg height="1.2em" class="arrow" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg>
+        </button>
+    </a>
+    <br>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true 
+        });
+    </script>
+</body>
+</html>
