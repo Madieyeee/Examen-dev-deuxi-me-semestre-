@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #9ac0d8, #75899b);
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #todo-container {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        #new-task-input {
+            width: 80%;
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        #add-task-button {
+            padding: 10px 20px;
+        }
+
+        .task {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+
+        .task.done {
+            text-decoration: line-through;
+            color: #888;
+        }
+
+        .task button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="todo-container">
+        <h1 style="margin-left: 20%; color: #fafafa;">Ma To-Do List</h1>
+        <input type="text" id="new-task-input" placeholder="Enter une nouvelle tâche..." />
+        <button id="add-task-button">Ajouter</button>
+        <ul id="task-list"></ul>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const taskInput = document.getElementById("new-task-input");
+            const addTaskButton = document.getElementById("add-task-button");
+            const taskList = document.getElementById("task-list");
+            addTaskButton.addEventListener("click", () => {
+                const taskText = taskInput.value.trim();
+                if (taskText !== "") {
+                    const taskItem = document.createElement("li");
+                    taskItem.className = "task";
+                    taskItem.innerHTML = `
+ <span>${taskText}</span>
+ <div>
+ <button class="complete-button">Terminer</button>
+ <button class="delete-button">Supprimer</button>
+ </div>
+ `;
+                    taskList.appendChild(taskItem);
+                    taskInput.value = "";
+                }
+            });
+            taskList.addEventListener("click", (event) => {
+                if (event.target.classList.contains("complete-button")) {
+                    const taskItem = event.target.closest(".task");
+                    taskItem.classList.toggle("done");
+                }
+                if (event.target.classList.contains("delete-button")) {
+                    const taskItem = event.target.closest(".task");
+                    taskList.removeChild(taskItem);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
